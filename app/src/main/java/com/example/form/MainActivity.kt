@@ -1,6 +1,7 @@
 package com.example.form
 
 import android.os.Bundle
+import android.widget.ArrayAdapter
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Spinner
@@ -28,5 +29,12 @@ class MainActivity : AppCompatActivity() {
         val departmentSpinners=findViewById<Spinner>(R.id.spinner)
         val submitButton=findViewById<Button>(R.id.button)
         val resultText=findViewById<TextView>(R.id.resultText)
+
+        //spinner values input
+        val departments= arrayOf("CSE","ECE","EEE","MECH","CIVIL")
+        val adapter=ArrayAdapter(this,android.R.layout.simple_spinner_item,departments)
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
+        departmentSpinners.adapter=adapter
+
     }
 }
