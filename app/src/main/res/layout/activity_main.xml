@@ -27,7 +27,7 @@
         android:layout_marginBottom="14dp"
         android:ems="10"
         android:inputType="text"
-        android:text="Enter your Cgpa"
+        android:hint="Enter your Cgpa"
         app:layout_constraintBottom_toTopOf="@+id/textView7"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextText2" />
@@ -86,7 +86,7 @@
         android:layout_marginBottom="52dp"
         android:ems="10"
         android:inputType="text"
-        android:text="Enter your name"
+        android:hint="Enter your name"
         app:layout_constraintBottom_toTopOf="@+id/editTextText2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
@@ -100,7 +100,7 @@
         android:layout_marginBottom="55dp"
         android:ems="10"
         android:inputType="text"
-        android:text="Enter your ID"
+        android:hint="Enter your ID"
         app:layout_constraintBottom_toTopOf="@+id/editTextText3"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextText" />
