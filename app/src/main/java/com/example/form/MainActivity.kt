@@ -22,6 +22,7 @@ class MainActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+
         // reference all the ui elements
         val nameText=findViewById<EditText>(R.id.editTextText)
         val idText=findViewById<EditText>(R.id.editTextText2)
