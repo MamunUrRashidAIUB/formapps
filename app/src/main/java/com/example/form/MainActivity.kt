@@ -42,6 +42,13 @@ class MainActivity : AppCompatActivity() {
             val id = idText.text.toString()
             val cgpa = cgpaText.text.toString()
             val department = departmentSpinners.selectedItem.toString()
+            //validation
+            if (name.isEmpty() || id.isEmpty() || cgpa.isEmpty() || department.isEmpty()) {
+                resultText.text = "Please fill in all the fields"
+                return@setOnClickListener
+            }
+
+            //display the result
             resultText.text = "Name: $name\nID: $id\nCGPA: $cgpa\nDepartment: $department"
         }
 
