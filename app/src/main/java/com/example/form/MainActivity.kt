@@ -36,6 +36,14 @@ class MainActivity : AppCompatActivity() {
         val adapter=ArrayAdapter(this,android.R.layout.simple_spinner_item,departments)
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
         departmentSpinners.adapter=adapter
+        //submit button click listener
+        submitButton.setOnClickListener {
+            val name = nameText.text.toString()
+            val id = idText.text.toString()
+            val cgpa = cgpaText.text.toString()
+            val department = departmentSpinners.selectedItem.toString()
+            resultText.text = "Name: $name\nID: $id\nCGPA: $cgpa\nDepartment: $department"
+        }
 
 
     }
